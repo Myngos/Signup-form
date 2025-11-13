@@ -47,7 +47,7 @@ form{
 
 input{
     width: 250px;
-    border: 1px solid #D6D9DC;
+    border: 1px solid #E5E7EB;
     border-radius: 2px;
     padding: 3px 5px;
     font-size: medium;
@@ -61,9 +61,8 @@ div{
 }
 
 button{
-   
     padding: 10px;
-    background-color: green;
+    background-color: #596D48;
     border: none;
     border-radius: 10px;
     width: 30%;
@@ -72,7 +71,7 @@ button{
 }
 
 strong{
-    color: green;
+    color: #596D48;
 }
 .text{
     font-size: large;
@@ -89,9 +88,50 @@ strong{
     margin-top: 10px;
 }
 
-input:hover{
-    outline: 2px solid purple;
+input:focus {
+    outline: none;
+    border-color: #4A90E2;
+    border-width: 1px;
+    box-shadow: 1px 1px 5px;
 }
 input:invalid{
     outline: 2px solid red;
+}
+.img {
+  position: relative;
+  width: 40%;
+  overflow: hidden;
+}
+
+.img-text {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+  filter: brightness(0) invert(1);
+}
+
+.logo span {
+  margin: 0;
 }
