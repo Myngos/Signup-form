@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Sign-up Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -15,33 +16,50 @@
             <header>
                 <p>This is not a real online service! You know you need something <br>
                 like this in you life to help you realize youe deepest dreams. <br>
-                Sign up to get started!.
+                Sign up to get started.
                 </p>
-                <p>You know you want to!</p>
+                <p>You know you want to.</p>
                 
             </header>
+           <div class="center">
+             <p class="text">Lets do this!</p>
             <form action="" method="post">
-                <div>
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname">
-                </div>
-                <div>
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname">
-                </div>
-                <div>
-                    <label for="Email">Email</label>
-                    <input type="email" name="Email">
-                </div>
-                <div>
-                    <label for="password">Password</label>
+                <div class="left">
+                 <div  class="field">
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Deez">
+                  </div>
+                  <div class="field">
+                    <label for="Email">EMAIL</label>
+                    <input type="email" name="Email" id="email" placeholder="mines@gmail.com">
+                 </div>
+                 <div class="field">
+                    <label for="password">PASSWORD</label>
                     <input type="password" name="password">
+                 </div>
                 </div>
-                <div>
-                    <label for="confirm-password">confirm-password</label>
-                    <input type="password" name="confirm-password">
+
+                <div class="right">
+                 <div class="field">
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Nuts">
+                 </div>
+                 <div class="field">
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" name="phone" id="phone" placeholder="0813313054">
+                 </div>
+                <div class="field">
+                    <label for="confirm-password">CONFIRM-PASSWORD</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                 </div>
                 </div>
+                
             </form>
+           </div>
+            <div class="bottom">
+                <button>Create Account</button>
+                <p>Already have an account? <strong>Log in</strong></p>
+            </div>
         </div>
         <div class=""></div>
     </main>
